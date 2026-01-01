@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react' // Import 2 công cụ quan trọng
 import './App.css'
+import Board from '../components/Board'
 
 function App() {
   // 1. Tạo một biến 'message' để lưu dòng chữ lấy từ Python về
@@ -21,8 +22,7 @@ function App() {
   return (
     <div className="App">
       <h1>Chess AI Project</h1>
-      {/* 3. Hiển thị biến message ra màn hình */}
-      <p>Server nói: <strong>{message}</strong></p>
+      <Board />
     </div>
   )
 }

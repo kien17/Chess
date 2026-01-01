@@ -1,0 +1,28 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px); /* 8 cột, mỗi cột 50px */
+  grid-template-rows: repeat(8, 50px);    /* 8 hàng, mỗi hàng 50px */
+  border: 5px solid #333;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center; /* Căn giữa ngang */
+  align-items: center;     /* Căn giữa dọc */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.black {
+  background-color: #769656; /* Màu xanh lá đậm (giống Chess.com) */
+  color: white;
+}
+
+.white {
+  background-color: #eeeed2; /* Màu kem */
+  color: black;
+}
